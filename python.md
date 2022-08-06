@@ -1,31 +1,24 @@
 ![image](https://user-images.githubusercontent.com/97832618/183249983-d0f7122c-d03f-4960-8d8d-d40a42834942.png)
-# OS module in python : a bash-script substitute 
-## Directories
-### get the current working directorie
-```python
-# Get the current working 
-# directory (CWD) 
-cwd = os.getcwd() 
-```
-### create a directorie
+# python : a bash-script substitute 
 
-- os.mkdir(*path,mode*)  
-- os.makedirs()    
+## **OS module**
+| Syntax | Description |
+| ----------- | ----------- |
+| os.mkdir(*path,mode*) | mkdir + chmod| 
+| os.makedirs(*path,mode*) | just like mkdir -p : creates the parents folder if neccessary | 
+| os.remove(*path*) | delete file |  
+| os.rmdir(*path*) | delete empty dir | 
+| os.name | OS name |
+| os.path.join(*path 1*, *path 2*) | useful to cat paths  |
+| os.popen(*path_file*, *'w'*) | returns a file we can write into  |
+|os.close| close the file|
+|os.rename(*path_file*, *'new_name.txt'* )| |
+|os.path.exists(*path_file*)| returns ture or false|
+|os.path.getsize(*path_file*)| returns size of file in bytes|
+|||
 
-| Syntax | Description | Bash equivalent
-| ----------- | ----------- | ----------- |
-| os.mkdir(*path,mode*) | simply create dir with an optional access mode| mkdir ... && chmod ...
-| os.makedirs(*path,mode*) | just like mkdir -p : this creates the parents folder if neccessary | mkdir -p ... && chmod ...
-| os.remove(*path*) | delete file | rm ...
-| os.rmdir(*path*) | delete empty dir | ?
-| os.name | OS name : 
- - RISC OS
-    Portable Operating System Interface (POSIX)
-    OS/2
-    JavaOS
-    Windows Embedded Compact (CE)
-    Windows NT
- | ?
+
+
 ```python
 # Directory 
 directory = "GeeksforGeeks"
@@ -43,11 +36,13 @@ except OSError as error:
     print(error) 
 
 #or
-# mode
 mode = 0o666
 os.mkdir(path, mode)
 ```
 
-# Ressources
+
+
+
+### Ressources
 
 https://www.geeksforgeeks.org/os-module-python-examples/
