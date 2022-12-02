@@ -1,8 +1,8 @@
 # Git - Dépendances
 
-## 1)Juste gcl en fait! 
+## 1) git clone sur git clone ? 
 
-Pour travailler sur un nouveau projet (ex un gros projet 42) qui dépend d'un autre projet (ex la libft) :
+Pour travailler sur un nouveau projet (ex un gros projet 42) qui dépend d'un autre projet (ex la libft), on peut faire :
 
 ```sh
 git clone <url_gros_projet> MonGrosProjet
@@ -23,8 +23,8 @@ On peut maintenir la libft à jour depuis ce repos
 
 
 <span style="color:red">
-⚠️La libft ne sera pas push avec le projet !
-</span>.
+⚠️Mais attention La libft ne sera pas push avec le projet !
+</span>
 
 
 ```sh
@@ -36,25 +36,30 @@ MonGrosProjet
 ├── ...
 └── ...
 ```
+<span style="color:red">
+Alors comment faire ?
+</span>
 
+![image](https://media.tenor.com/Gc7Crn1EBVgAAAAC/steve-carell-sad.gif) <br>
 <br>
 <br>
 
 ## 2) Les "git submodules" : plus tricky, mais mieux 
 
-Les submodules sont la solution si l'on veut dépendre d'une dépandance **d'une manière statique !!** <br>
+
+Les submodules sont **la** solution : <br>
 
 
 
 Pour maintenir la libft à jour : <br>
-Mais on peut la tenir à jour grâce à : 
 
 ```sh
 git pull --recurse-submodules
 git push --recurse-submodules
 ```
 
-
 <span style="color:green">
-La libft sera bien push avec le projet.
+Et en prime, la libft sera bien push avec le projet.
 </span>.
+
+![image](https://media.tenor.com/mUR6IIN2CnEAAAAC/wow-surprised.gif) <br>
