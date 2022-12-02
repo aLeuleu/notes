@@ -59,7 +59,7 @@ git push --recurse-submodules
 ```
 
 <span style="color:green">
-Et en prime, la libft sera bien push avec le projet.
-</span>.
+Et en prime, la libft sera bien push avec le projet. ✅
+</span>
 
 ![image](https://media.tenor.com/mUR6IIN2CnEAAAAC/wow-surprised.gif) <br>
