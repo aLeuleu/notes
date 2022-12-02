@@ -1,6 +1,6 @@
 # Git - Dépendances
 
-## Just gcl en fait! 
+## 1)Juste gcl en fait! 
 
 Pour travailler sur un nouveau projet (ex un gros projet 42) qui dépend d'un autre projet (ex la libft) :
 
@@ -38,13 +38,22 @@ MonGrosProjet
 ├── ...
 └── ...
 ```
-## Git submodules ? 
+
+<br>
+<br>
+
+## Et les "git submodules", bonne ou mauvaise idée ? 
 
 Les submodules sont la solution si l'on veut dépendre d'une dépandance **d'une manière statique !!** <br>
 
 <span style="color:red">
-⚠️On ne peut pas maintenir la libft à jour de cette manière  !
-</span>.
+⚠️On ne peut pas maintenir la libft à jour de cette manière  ! <br>
+Mais on peut la tenir à jour grâce à : 
+</span> <br>
+
+```sh
+git pull --recurse-submodules
+```
 
 
 <span style="color:green">
