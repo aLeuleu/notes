@@ -19,9 +19,7 @@ MonGrosProjet
 └── ...
 ```
 
-<span style="color:green">
 On peut maintenir la libft à jour depuis ce repos  
-</span>.
 
 
 <span style="color:red">
@@ -30,7 +28,7 @@ On peut maintenir la libft à jour depuis ce repos
 
 
 ```sh
-gaa && gcmsg -m 'update' && gp
+gaa && gcmsg -m 'asdf' && gp
  	↓ 
 MonGrosProjet
 ├── libft\
@@ -42,20 +40,21 @@ MonGrosProjet
 <br>
 <br>
 
-## Et les "git submodules", bonne ou mauvaise idée ? 
+## 2) Les "git submodules" : plus tricky, mais mieux 
 
 Les submodules sont la solution si l'on veut dépendre d'une dépandance **d'une manière statique !!** <br>
 
-<span style="color:red">
-⚠️On ne peut pas maintenir la libft à jour de cette manière  ! <br>
+
+
+Pour maintenir la libft à jour : <br>
 Mais on peut la tenir à jour grâce à : 
-</span> <br>
 
 ```sh
 git pull --recurse-submodules
+git push --recurse-submodules
 ```
 
 
 <span style="color:green">
-La libft sera push avec le projet.
+La libft sera bien push avec le projet.
 </span>.
