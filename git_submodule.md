@@ -70,3 +70,28 @@ Pour bien cloner le projet, il sera necessaire de faire :
 git clone --recursive
 ```
 Pensez-y ! ..
+
+"*Oui mais ca passera pas la mouli ca ?*"
+
+Sans blagues Sherlock.
+Mais tqt, tu peux facilement transformer ton submodules en simple directory : 
+
+```
+git --version #make sure git is >= V1.8.5 !
+mv yoursubmodule yoursubmodule_tmp
+git submodule deinit yourSubmodule
+git rm yourSubmodule
+mv yoursubmodule_tmp yoursubmodule
+git add yoursubmodule
+```
+(à faire juste avant de push, évidemment)
+
+"*Giga chad mon reuf. Mais si j'ai fail mon projet et que je dois le retry, comment remettre le submodules ? Nan je déconne je fail pas haha. Mais imagine quand meme.*"
+
+```
+rm yourdirectory
+git submodule add <remote_url> <destination_folder>
+```
+
+Facile non ? 
+Voilà, et avec ca les normi-nazis n'ont qu'a bien se tenir
