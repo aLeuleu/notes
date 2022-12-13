@@ -5,8 +5,9 @@
 La tête est un pointeur spécial qui est toujours présent dans un dépôt Git, quelle que soit la branche sur laquelle vous travaillez. **Vous pouvez penser à la tête comme étant le commit "courant" sur lequel vous travaillez.**
 
 ![image](https://blog.git-init.com/content/images/2021/08/HEAD.001.png)
-*à gauche, la HEAD pointe sur main, et donc vos fichiers seront à jour avec le dernier commit*
-*à droite, la HEAD ne pointe plus sur une branche, on dit qu'elle est 'detached'. Et vous  *
+
+à gauche, la HEAD pointe sur main, et donc vos fichiers seront à jour avec le dernier commit.
+à droite, la HEAD ne pointe plus sur une branche, on dit qu'elle est detached. Et vos fichiers seront modifiés en conséquence !.. 
 
 
 
