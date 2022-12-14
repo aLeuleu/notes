@@ -136,7 +136,7 @@ git clone --recursive
 ```
 Pensez-y ! ..
 
-"*Oui mais ca passera pas la mouli ca ?*"
+"*Oui mais la mouli ne rajoutera pas ce flag toute seule ?*"
 
 Sans blagues Sherlock.
 Mais tqt, tu peux facilement transformer ton submodules en simple directory : 
