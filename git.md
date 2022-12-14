@@ -136,7 +136,7 @@ git clone --recursive
 ```
 Pensez-y ! ..
 
-"*Oui mais la mouli ne rajoutera pas ce flag toute seule ?*"
+"*Oui mais les correcteur ne vont pas clone avec ce flag, eux?*"
 
 Sans blagues Sherlock.
 Mais tqt, tu peux facilement transformer ton submodules en simple directory : 
@@ -151,7 +151,7 @@ git add yoursubmodule
 ```
 (à faire juste avant de push, évidemment)
 
-"*si j'ai fail mon projet et que je dois le retry, comment remettre le submodules ? *"
+"*si j'ai fail mon projet et que je dois le retry, comment remettre le submodules ?*"
 
 ```
 rm yourdirectory
