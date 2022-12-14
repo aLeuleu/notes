@@ -96,7 +96,7 @@ On peut maintenir la libft à jour depuis ce repos
 gaa && gcmsg -m 'asdf' && gp
  	↓ 
 MonGrosProjet
-├── libft\
+├── libft\ <- ce dossier est completement vide
 ├── ...
 ├── ...
 └── ...
@@ -151,7 +151,7 @@ git add yoursubmodule
 ```
 (à faire juste avant de push, évidemment)
 
-"*Giga chad mon reuf. Mais si j'ai fail mon projet et que je dois le retry, comment remettre le submodules ? Nan je déconne je fail pas haha. Mais imagine quand meme.*"
+"*si j'ai fail mon projet et que je dois le retry, comment remettre le submodules ? *"
 
 ```
 rm yourdirectory
@@ -159,4 +159,3 @@ git submodule add <remote_url> <destination_folder>
 ```
 
 Facile non ? 
-Voilà, et avec ca les normi-nazis n'ont qu'a bien se tenir
